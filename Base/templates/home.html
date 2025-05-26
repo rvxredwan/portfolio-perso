@@ -1,0 +1,221 @@
+{% load static%}
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portf </title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>`
+    
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Accueil <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">À propos de nous <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Compétences <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projets <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Bonjour, nous sommes</h6>
+                <h1 class="t-white">Chakir Zakariae</h1>
+                <h4 class="poppinss">Oussama Bouhali</h4>
+                <a href="{% static 'pdf/CV.pdf' %}"  target="_blank">
+                    <button class="btn poppins">C.V CHAKIR</button></a>
+                 <a href="{% static 'pdf/O.pdf' %}"  target="_blank">
+                    <button class="btn poppins">C.V BOUHALI</button></a>   
+                
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+               
+                <img src="{% static 'images/za.png'%}" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">À propos</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="{%static 'images/dog.png'%}" alt="" style="width: 60%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Chakir Zakariae</h1>
+                    <p class="t-white poppins"> Je suis étudiant en première année de cycle d’ingénierie en informatique et réseaux à l’EMSI Rabat. Passionné par le développement web, je cherche constamment à améliorer mes compétences techniques et à travailler sur des projets innovants. 
+                                            Curieux, autonome et rigoureux, je suis motivé pour explorer de nouvelles technologies et relever des défis dans le domaine du développement logiciel.</p>
+                        <h1 class="t-white m-b-1 poppins">Oussama Bouhali</h1>
+                                            <p class="t-white poppins"> Je suis un étudiant en génie informatique, passionné par les technologies du numérique, le développement logiciel et l’infrastructure des systèmes informatiques. Mon parcours m’a permis d’acquérir une solide base en réseaux, sécurité informatique, ainsi qu’en programmation orientée objet, développement web (HTML, CSS, JavaScript, PHP) et backend (Java, Python, Django, MySQL).</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Compétences Chakir</h1>
+        <div class="services-container flex s-around h-50">
+        <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/chh.png'%}" alt="">
+        </div>
+
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="java bar p-relative"><span class="bar-content left t-white">LARAVEL(PhP)</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">css</span><span
+                        class="bar-content right-skills t-white">80%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="python bar p-relative"><span class="bar-content left t-white">MySQL</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                <div class="mysql bar p-relative"><span class="bar-content left t-white">Python</span><span
+                        class="bar-content right-skills t-white">40%</span></div>        
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Compétences Bouhali</h1>
+        <div class="services-container flex s-around h-50">
+        <div class=" skills-left flex s-center items-center">
+            <img src="{%static 'images/oss.png'%}" alt="">
+        </div>
+
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="java bar p-relative"><span class="bar-content left t-white">C++</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="html bar p-relative"><span class="bar-content left t-white">BureautiqueReseau informatique</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                
+                
+                <div class="css bar p-relative"><span class="bar-content left t-white">Bureautique</span><span
+                        class="bar-content right-skills t-white">80%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">Maintenance</span><span
+                        class="bar-content right-skills t-white">70%</span></div>
+                <div class="python bar p-relative"><span class="bar-content left t-white">Java</span><span
+                        class="bar-content right-skills t-white">60%</span></div>
+                
+                      
+            </div>
+        </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1 class=" t-center my-2 t-white f-2">Projets</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Support-tickets</h1>
+                <p class="t-white poppins"> Il s'agit d'une application fonctionnelle de gestion de tickets, permettant de suivre les bugs et de gérer les demandes de support. Ce projet intègre mon propre style de design et des fonctionnalités que je pensais améliorer. Il a été créé avec Laravel et utilise une base de données MySQL pour la gestion des données, l'authentification des utilisateurs avec Laravel .</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/rvxredwan/Support-tickets"
+                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
+                    
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+               
+                <h1 class="t-white poppins">Portfolio</h1>
+                <p class="t-white poppins">Ceci est mon site de portfolio créé avec Python, HTML et CSS, qui décrit mes compétences et mes connaissances. Mon site de portfolio présente mon travail dans un design épuré et minimaliste</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/rvxredwan/portfolio" target="_blanks"
+                        class="btn mx-1 m-top">GitHub</a>
+                    
+                </div>
+            </div>
+           
+         </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post" > 
+                    {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="poppins" placeholder="Enter Your Email"
+                            required>
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+                    
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+    <li><a href="#home" class="poppinss">Accueil</a></li>
+    <li><a href="#about" class="poppinss">À propos de nous</a></li>
+    <li><a href="#skills" class="poppinss">Compétences</a></li>
+    <li><a href="#projects" class="poppinss">Projets</a></li>
+    <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+</ul>
+
+        <ul class="flex s-center w-80 font-awesome ">
+            
+            <a href="https://github.com/rvxredwan" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            
+            
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">PROD CHAKIR & BOUHALI 
+                </span></p>
+
+    </footer>
+     
+</body> 
+</html>
