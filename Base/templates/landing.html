@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose Portfolio</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .container img {
+            width: 300px;
+            border: 3px solid white;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .container img:hover {
+            transform: scale(1.05);
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choisissez un portfolio</h1>
+    <div class="container">
+        <a href="{% url 'chakir' %}">
+            <img src="{% static 'images/za.png' %}" alt="Portfolio Chakir">
+        </a>
+        <a href="{% url 'oussama' %}">
+            <img src="{% static 'images/oo.jpg' %}" alt="Portfolio Oussama">
+        </a>
+    </div>
+</body>
+</html>
