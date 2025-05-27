@@ -1,3 +1,4 @@
+## DESCRIPTION
 Ce projet est une application web développée avec Python et le framework Django, destinée à présenter mon profil professionnel, mes compétences, mes projets réalisés, ainsi que mes coordonnées de contact. L’objectif principal est de créer une plateforme simple, moderne et responsive, qui reflète mon parcours et facilite le contact avec des recruteurs ou des clients.
 
 ## Create a virtual environment :
