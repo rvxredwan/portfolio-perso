@@ -4,13 +4,13 @@ Ce projet est une application web développée avec Python et le framework Djang
 ## Create a virtual environment :
 
 ```bash
-$ python -m venv .venv
+python -m venv venv
 ```
 
 ## Activate the virtual environment on Windows :
 
 ```bash
-$ source venv/Scripts/activate
+venv\Scripts\activate
 ```
 
 ## To install Django :
